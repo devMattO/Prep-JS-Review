@@ -75,6 +75,10 @@ console.log(india);
 
  console log the object*/
 
+var hotel = {name:'Hilton',rooms:200,pool:true,checkIn: null};
+console.log(hotel);
+ 
+
 /*9.  Declare a literal object named "car" with properties and values set to:
 
     make  => "BMW"
