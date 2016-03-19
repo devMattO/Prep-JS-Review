@@ -106,8 +106,6 @@ bigBox.color = 'blue';
 bigBox.contents = [];
 console.log(bigBox);
 
-
-
 /*11.  Declare a literal object named "colorMeBadd" with properties and values set to:
 
    iro        => [literal object]
@@ -123,15 +121,34 @@ console.log(bigBox);
 
 console log the object */ 
 
+var colorMeBadd = {iro:{akai:'red',aoi: 'blue',midori:'green',shiroi:'white',pinku:'pink',murasaki:'purple'},isJapanese:true};
+console.log(colorMeBadd);
 /*For exercises #12 - 14, declare two variables, one named "dog" and the other named "cat".  Assign a number value for each variable.*/
+
+var dog = 4;
+var cat = 1;
 
 /*12.  Declare a function named add.
 This function will take two parameters and returns the result of adding two numbers together.
 Store this value in a variable named sum and console log this variable.*/
 
+function add(num1,num2) {
+  return num1 + num2;
+}
+var sum = add(dog,cat);
+console.log(sum);
+
+
+
 /*13.  Declare a function named subtract. 
 This function will take two parameters and returns the result of subtracting two numbers together. 
 Store this value in a variable named difference and console log this variable.*/
+
+function subtract(numba1,numba2){
+  return numba1 - numba2;
+}
+var difference = subtract(dog,cat);
+console.log(difference);
 
 /*14. Declare a function named multiply.
 This function will take two parameter and return the result of multipling two numbers together.
