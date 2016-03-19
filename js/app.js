@@ -15,13 +15,18 @@ console.log(yourName,neighborName,teacherName);
 /*2. Variable with a Number as their value.
 Declare variables named numberOfFloorsBurjKhalifa, tokyoOlympicsYear.  Console log each variable.*/
 
-var numberOfFloorsBurjKhalifa = 1200;
+var numberOfFloorsBurjKhalifa = 163;
 var tokyoOlympicsYear = 1964;
 console.log(numberOfFloorsBurjKhalifa,tokyoOlympicsYear);
 
 
 /*3. Variables with Boolean values
 Declare variables named lovesPrepClass, eatsDonuts, drinksGin.  Console log each variable.*/
+
+var lovesPrepClass = true;
+var eatsDonuts = true;
+var drinksGin = true;
+console.log(lovesPrepClass,eatsDonuts,drinksGin);
 
 /*4. Variable with Null values
 Declare variables named completedCodingChallenge, traveledToSpace.  Console log each variable*/
