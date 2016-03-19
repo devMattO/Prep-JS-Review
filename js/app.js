@@ -90,7 +90,7 @@ console.log(hotel);
 
  var car = {make:'BMW',model:'X5',year:2015,doors:4};
  console.log(car);
- 
+
 
 /*10.  Declare a literal object named bigBox and set its value to be an empty object.
 
@@ -99,6 +99,13 @@ Add a prperty named color and set it to any color.
 Add a property named contents and set it to be an empty array
 
 console log the object*/
+
+var bigBox = {};
+bigBox.size = Math.floor(Math.random()*50);
+bigBox.color = 'blue';
+bigBox.contents = [];
+console.log(bigBox);
+
 
 
 /*11.  Declare a literal object named "colorMeBadd" with properties and values set to:
