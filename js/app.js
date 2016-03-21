@@ -171,10 +171,21 @@ console.log(dunkinDonuts(sum));
 /*16.  Declare a function named stayinClassy.
 This function will access the values store in the difference and product variables and uses these numbers to return the string "Yea, I drank X gallons of box wine and ate Y bags of Cheetos and still feel vibrant yo!"  X is the value stored at difference variable and Y is the value stored at product variable. Console.log the result.*/
 
+function stayingClassy(gallons,bags){
+  return "Yea, I drank " + gallons + " gallons of box wine and ate " + bags + " bags of Cheetos and still feel vibrant yo!";
+}
+
+console.log(stayingClassy(difference,product));
+
 /*17.  Declare a function named watMyName, which takes two parameters firstName and lastName.
 This function will return a string "My name is...firstName lastName."
 Invoke this function by passing in the string values of "Slim", "Shady". and console log the result.
 */
+
+function watMyName(firstName,lastName){
+  return "My name is..." + firstName + " " + lastName;
+}
+console.log(watMyName("Slim","Shady"));
 
 /*18. Using the japanPrefectures array you created in exercise 5, create a for loop that iterates through this array and console logs the following message:
 
