@@ -234,10 +234,29 @@ function fightDaPower(areYouReady){
 }
 console.log(fightDaPower(drinkinAlready));
 
-/*22. Declare a function named contentFiller which takes in a single parameter which will be an object.  Write a for loop that will put 5 random numbers between the values of 0 to 20 in the contents array in the bigBox object you created in exercise 10.  Console log the result.*/
+/*22. Declare a function named contentFiller which takes in a single parameter which will 
+be an object.  Write a for loop that will put 5 random numbers between the values of 0 to 20 
+in the contents array in the bigBox object you created in exercise 10.  Console log the result.*/
 
-/*23.  Declare a function named firstReverse which takes a single parameter str.  This function will take a string parameter being passed in and return the string in reverse order.*/
+function contentFiller(obj){
+  for (var i = 0; i < 5; i++) {
+    bigBox.contents.push(Math.floor(Math.random()*20));
+  }
+}
+contentFiller(bigBox);
+console.log(bigBox);
 
+/*23.  Declare a function named firstReverse which takes a single parameter str.  
+This function will take a string parameter being passed in and return the string in 
+reverse order.*/
+  var reverseString;
+
+function firstReverse(str){
+  for (var i = str.length - 1; i >= 0; i--){
+    console.log(str[i]);
+  }
+}
+firstReverse("shooooots");
 /*24.  Using DOM, create the follow HTML layout:
 
 <div id="dessert">
@@ -251,3 +270,44 @@ console.log(fightDaPower(drinkinAlready));
   </span>
 </div>    
 */
+window.onload = function() {
+
+var firstDiv = document.createElement('div');
+var firstSpan = document.createElement('span');
+var firstPara = document.createElement('p');
+var firstText = document.createTextNode('chocolate');
+
+firstDiv.id = "dessert";
+firstSpan.id = "cakes";
+
+firstPara.appendChild(firstText);
+firstSpan.appendChild(firstPara);
+firstDiv.appendChild(firstSpan);
+
+document.body.appendChild(firstDiv);
+
+
+var secondDiv = document.createElement('div');
+var secondSpan = document.createElement('span');
+var secondPara = document.createElement('p');
+var secondText = document.createTextNode('kool-aid');
+
+
+secondDiv.id = "drinks";
+secondSpan.id = "juice";
+
+secondPara.appendChild(secondText);
+secondSpan.appendChild(secondPara);
+secondDiv.appendChild(secondSpan);
+
+document.body.appendChild(secondDiv);
+
+
+};
+
+
+
+
+
+
+
